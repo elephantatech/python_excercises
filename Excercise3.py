@@ -2,7 +2,6 @@
 Author: Vivek Mistry
 """
 import fnmatch
-import re
 
 def isMatch( s: str, p: str) -> bool:
     """
@@ -18,7 +17,7 @@ def isMatch( s: str, p: str) -> bool:
     else:
         return False
 
-print(isMatch("aa","*"))
+# print(isMatch("aa","*"))
 
-print(isMatch("aa","?b"))
+# print(isMatch("aa","?b"))
 

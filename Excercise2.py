@@ -30,7 +30,12 @@ def lca(node1, node2):
     """
     parent_tree1 = get_all_parents(node1)
     parent_tree2 = get_all_parents(node2)
-    common_parents = set(parent_tree1).intersection(parent_tree2)
+    if node1.isRoot():
+        common_parents = set([1]).intersection(parent_tree2)
+    elif node2.isRoot():
+        common_parents = set(parent_tree1).intersection([1])
+    else:
+        common_parents = set(parent_tree1).intersection(parent_tree2)
 
     return max(common_parents)
 
@@ -50,5 +55,5 @@ def confirm_parent(num1, num2):
         return None
 
 
-print(lca(nodetree[8],nodetree[9]))
-print(lca(nodetree[6],nodetree[8]))
+# print(lca(nodetree[8],nodetree[9]))
+# print(lca(nodetree[6],nodetree[8]))
