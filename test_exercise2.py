@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Excercise2 import lca, Node, confirm_parent, nodetree
+from exercise2 import lca, Node, confirm_parent, nodetree
 
 
 class TestLca(TestCase):

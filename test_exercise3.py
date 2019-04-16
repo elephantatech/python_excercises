@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Excercise3 import isMatch
+from exercise3 import isMatch
 
 class TestIsMatch(TestCase):
     def test_isMatch_false(self):

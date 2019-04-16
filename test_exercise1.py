@@ -1,7 +1,7 @@
 import io
 import unittest
 import unittest.mock
-from Excercise1 import print_depth
+from exercise1 import print_depth
 
 class TestPrint_depth(unittest.TestCase):
 

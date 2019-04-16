@@ -1,2 +1,2 @@
-# python_excercises
-python excercises
+# python_exercises
+python exercises
