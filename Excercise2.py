@@ -20,7 +20,12 @@ def lca(node1, node2):
     Function takes 2 parameters of nodes and return common parent
     :param node1:
     :param node2:
-    :return: common_parent
+    :return: parent_value
+
+    this function will take time to run if the nodetree is big as the function core runs recursively.
+    Therefore the further apart the nodes on the node tree the longer it takes to find the parent.
+    So other mechanisms need to be added to calculate how far apart the nodes are and how to get the common parent faster
+    in a logical manner instead of a recursive manner.
     """
 
     parent_value = confirm_parent(node1.parent, node2.parent)
